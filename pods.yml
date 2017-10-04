@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
       - name: storemanager-ui
-        image: registry.ng.bluemix.net/jkebanking/storemanager-ui:6
+        image: registry.ng.bluemix.net/jkebanking/storemanager-ui:10
         resources:
           requests:
             cpu: 100m
