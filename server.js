@@ -17,10 +17,13 @@ var context   = process.env.API_CONTEXT;
 if (!context) {
     context="";
 }
+else {
+  //context = "/"+context;
+}
 ///StoreManager
 
 if (port && domain) {
-    console.log("http://"+domain+":"+port);
+    console.log("http://"+domain+":"+port+context);
 }
 
 app.get('/', function (req, res) {
@@ -100,7 +103,7 @@ function getVersion() {
   var data = JSON.parse(str);
     console.log(data);
     res.render('index',
-      { title : 'Store Manager',
+      { title : 'Store Manager UI',
         graph : str ,
         dataset0: dataset0,
         dataset1: dataset1,
