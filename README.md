@@ -1,1 +1,1 @@
-# jke-banking
+# storemanager-ui
