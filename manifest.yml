@@ -1,5 +1,6 @@
 ---
 applications:
- - name: JKE Banking Plus
-   random-route: true
+ - name: store-manager-ui
+   random-route: false
+   command: npm start
    memory: 256M
